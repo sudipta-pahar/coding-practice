@@ -20,19 +20,20 @@ int caljump(int x, int y, int n, int height[]){
 int main()
 {
     int x, y, n;
-    printf("Enter number of jumps: ");
+    //printf("Enter number of jumps: ");
     scanf("%d", &n);
     int arr[n];
-    printf("Each wall height\n");
+    //printf("Each wall height\n");
     for(int i=0; i<n; i++){
-        printf("Wall height %d: ", i);
+        //printf("Wall height %d: ", i);
         scanf("%d", &arr[i]);
     }
-    printf("Jump and fall-back ability\n");
-    printf("Enter jump ability: ");
+    //printf("Jump and fall-back ability\n");
+    //printf("Enter jump ability: ");
     scanf("%d", &x);
-    printf("Enter fall-back ability: ");
+    //printf("Enter fall-back ability: ");
     scanf("%d", &y);
-    printf("Number of jumps required: %d", caljump(x,y,n,arr));
+    //printf("Number of jumps required: ");
+    printf("%d", caljump(x,y,n,arr));
     return 0;
 }
